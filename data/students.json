@@ -1,0 +1,17 @@
+[
+  {"id": "25CS081", "name": "Vaidehi Patel", "department": "CSE", "semester": 3, "gpa": 9.4},
+  {"id": "25CS001", "name": "Aarav Sharma", "department": "CSE", "semester": 3, "gpa": 8.9},
+  {"id": "25CS014", "name": "Bhavya Joshi", "department": "IT", "semester": 3, "gpa": 7.8},
+  {"id": "25CS023", "name": "Chirag Dave", "department": "CSE", "semester": 5, "gpa": 8.2},
+  {"id": "25CS035", "name": "Dipti Shah", "department": "BCA", "semester": 1, "gpa": 9.1},
+  {"id": "25CS042", "name": "Eshan Trivedi", "department": "IT", "semester": 3, "gpa": 7.4},
+  {"id": "25CS051", "name": "Forum Panchal", "department": "CSE", "semester": 5, "gpa": 8.5},
+  {"id": "25CS067", "name": "Gaurav Modi", "department": "BCA", "semester": 3, "gpa": 7.9},
+  {"id": "25CS074", "name": "Harshil Vyas", "department": "IT", "semester": 1, "gpa": 8.0},
+  {"id": "25CS092", "name": "Ishani Parekh", "department": "CSE", "semester": 5, "gpa": 8.7},
+  {"id": "25CS103", "name": "Jatin Makwana", "department": "IT", "semester": 3, "gpa": 7.2},
+  {"id": "25CS115", "name": "Kavya Desai", "department": "BCA", "semester": 1, "gpa": 8.8},
+  {"id": "25CS126", "name": "Manan Soni", "department": "CSE", "semester": 3, "gpa": 7.6},
+  {"id": "25CS138", "name": "Neha Parmar", "department": "IT", "semester": 5, "gpa": 8.3},
+  {"id": "25CS149", "name": "Parth Zala", "department": "BCA", "semester": 3, "gpa": 8.1}
+]

@@ -1,0 +1,17 @@
+[
+  {"id": "EVT101", "title": "Annual Hackathon 2026", "category": "Technical", "date": "2026-10-15"},
+  {"id": "EVT102", "title": "RoboWars Arena", "category": "Technical", "date": "2026-10-16"},
+  {"id": "EVT103", "title": "Inter-College Cricket Cup", "category": "Sports", "date": "2026-11-02"},
+  {"id": "EVT104", "title": "Badminton Championship", "category": "Sports", "date": "2026-11-04"},
+  {"id": "EVT105", "title": "Rangmanch Cultural Night", "category": "Cultural", "date": "2026-12-20"},
+  {"id": "EVT106", "title": "Battle of Bands", "category": "Cultural", "date": "2026-12-21"},
+  {"id": "EVT107", "title": "AI & Cloud Computing Seminar", "category": "Workshop", "date": "2026-10-25"},
+  {"id": "EVT108", "title": "Full Stack Dev Bootcamp", "category": "Workshop", "date": "2026-11-10"},
+  {"id": "EVT109", "title": "CodeSprint Contest", "category": "Technical", "date": "2026-10-18"},
+  {"id": "EVT110", "title": "Athletics Meet", "category": "Sports", "date": "2026-11-06"},
+  {"id": "EVT111", "title": "Classical Dance Showcase", "category": "Cultural", "date": "2026-12-22"},
+  {"id": "EVT112", "title": "Cybersecurity & OSINT Workshop", "category": "Workshop", "date": "2026-10-28"},
+  {"id": "EVT113", "title": "UI/UX Design Sprint", "category": "Technical", "date": "2026-11-15"},
+  {"id": "EVT114", "title": "Table Tennis Tourney", "category": "Sports", "date": "2026-11-08"},
+  {"id": "EVT115", "title": "Drama & Street Play", "category": "Cultural", "date": "2026-12-23"}
+]

@@ -1,0 +1,571 @@
+
+/* ==========================================
+   GLOBAL RESET
+   ========================================== */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+/* ==========================================
+   BODY
+   ========================================== */
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+
+  background-color: #f4f6f8;
+  color: #222;
+
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
+
+
+/* ==========================================
+   NOTIFICATION BANNER
+   ========================================== */
+
+.notification-banner {
+  background-color: #fffae6;
+  color: #856404;
+
+  border-bottom: 1px solid #ffeeba;
+
+  padding: 10px 16px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  font-size: 0.95rem;
+}
+
+
+#close-banner-btn {
+  background: transparent;
+  border: none;
+
+  font-size: 1.3rem;
+  line-height: 1;
+
+  color: #856404;
+
+  cursor: pointer;
+
+  padding: 0 6px;
+}
+
+
+#close-banner-btn:hover {
+  color: #000;
+}
+
+
+/* ==========================================
+   HEADER
+   ========================================== */
+
+header {
+  padding: 16px 20px;
+
+  background-color: #ffffff;
+
+  border-bottom: 1px solid #ddd;
+}
+
+
+/* ==========================================
+   NAVIGATION CONTAINER
+   ========================================== */
+
+.nav-container {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: flex-start;
+
+  padding: 10px 20px;
+
+  background-color: #ffffff;
+
+  border-bottom: 1px solid #ddd;
+}
+
+
+/* ==========================================
+   HAMBURGER BUTTON
+   ========================================== */
+
+.hamburger-toggle {
+  display: inline-block;
+
+  background: #f8f9fa;
+
+  border: 1px solid #ccc;
+
+  padding: 8px 14px;
+
+  font-size: 1rem;
+  font-weight: 500;
+
+  border-radius: 6px;
+
+  cursor: pointer;
+
+  color: #222;
+
+  transition:
+    background-color 0.2s ease,
+    border-color 0.2s ease;
+}
+
+
+.hamburger-toggle:hover {
+  background-color: #e9ecef;
+  border-color: #999;
+}
+
+
+.hamburger-toggle:focus {
+  outline: 2px solid #0d6efd;
+  outline-offset: 2px;
+}
+
+
+/* ==========================================
+   NAVIGATION LINKS
+   ========================================== */
+
+.nav-links {
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+
+  margin-top: 0;
+
+  gap: 0;
+
+  /* Closed state */
+  max-height: 0;
+
+  overflow: hidden;
+
+  opacity: 0;
+
+  visibility: hidden;
+
+  transition:
+    max-height 0.35s ease,
+    opacity 0.25s ease,
+    margin-top 0.35s ease;
+}
+
+
+/* Open state */
+
+.nav-links.active {
+  max-height: 400px;
+
+  margin-top: 10px;
+
+  opacity: 1;
+
+  visibility: visible;
+}
+
+
+/* Navigation links */
+
+.nav-links a {
+  display: block;
+
+  text-decoration: none;
+
+  color: #333;
+
+  font-weight: 500;
+
+  padding: 10px 12px;
+
+  border-radius: 5px;
+
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease;
+}
+
+
+.nav-links a:hover {
+  background-color: #f0f0f0;
+  color: #0d6efd;
+}
+
+
+/* ==========================================
+   FAQ SECTION
+   ========================================== */
+
+.faq-section {
+  max-width: 700px;
+  margin: 20px auto;
+}
+
+
+.faq-item {
+  border: 1px solid #ddd;
+
+  margin-bottom: 8px;
+
+  border-radius: 4px;
+
+  overflow: hidden;
+}
+
+
+.faq-question {
+  background-color: #eaeaea;
+
+  padding: 12px 16px;
+
+  cursor: pointer;
+
+  font-weight: bold;
+}
+
+
+.faq-answer {
+  max-height: 0;
+
+  overflow: hidden;
+
+  transition:
+    max-height 0.3s ease-out,
+    padding 0.3s ease;
+
+  padding: 0 16px;
+
+  background: transparent;
+}
+
+
+.faq-item.open .faq-answer {
+  padding: 12px 16px;
+}
+
+
+/* ==========================================
+   SLIDER
+   ========================================== */
+
+.slider-container {
+  position: relative;
+
+  max-width: 700px;
+
+  margin: 20px auto;
+
+  overflow: hidden;
+
+  border-radius: 8px;
+
+  box-shadow:
+    0 4px 6px rgba(0, 0, 0, 0.1);
+
+  background: #eee;
+
+  min-height: 180px;
+}
+
+
+.slide-item {
+  display: none;
+
+  padding: 40px;
+
+  text-align: center;
+}
+
+
+.slide-item.active {
+  display: block;
+}
+
+
+.slider-controls {
+  display: flex;
+
+  justify-content: space-between;
+
+  position: absolute;
+
+  top: 50%;
+
+  width: 100%;
+
+  transform: translateY(-50%);
+
+  padding: 0 10px;
+
+  box-sizing: border-box;
+}
+
+
+.slider-controls button {
+  background: rgba(0, 0, 0, 0.4);
+
+  color: white;
+
+  border: none;
+
+  padding: 8px 14px;
+
+  cursor: pointer;
+
+  border-radius: 4px;
+}
+
+
+.slider-controls button:hover {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+
+/* ==========================================
+   MODAL
+   ========================================== */
+
+.modal-overlay {
+  display: none;
+
+  position: fixed;
+
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  background: rgba(0, 0, 0, 0.5);
+
+  justify-content: center;
+
+  align-items: center;
+
+  z-index: 999;
+}
+
+
+.modal-overlay.show {
+  display: flex;
+}
+
+
+.modal-box {
+  background: #fff;
+
+  padding: 24px;
+
+  border-radius: 8px;
+
+  max-width: 450px;
+
+  width: 90%;
+
+  box-shadow:
+    0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+/* ==========================================
+   DARK THEME
+   ========================================== */
+
+body.dark-theme {
+  background-color: #121212 !important;
+  color: #e0e0e0 !important;
+}
+
+
+/* Header + Navigation + Footer */
+
+body.dark-theme header,
+body.dark-theme .nav-container,
+body.dark-theme footer {
+  background-color: #1e1e1e !important;
+
+  color: #e0e0e0 !important;
+
+  border-color: #333;
+}
+
+
+/* Hamburger */
+
+body.dark-theme .hamburger-toggle {
+  background-color: #2c2c2c !important;
+
+  color: #ffffff !important;
+
+  border-color: #555;
+}
+
+
+body.dark-theme .hamburger-toggle:hover {
+  background-color: #3a3a3a !important;
+}
+
+
+/* Notification */
+
+body.dark-theme .notification-banner {
+  background-color: #2b2613 !important;
+
+  color: #ffe885 !important;
+
+  border-bottom: 1px solid #4a411e;
+}
+
+
+body.dark-theme #close-banner-btn {
+  color: #ffe885 !important;
+}
+
+
+/* FAQ */
+
+body.dark-theme .faq-question {
+  background-color: #2a2a2a !important;
+
+  color: #ffffff !important;
+
+  border-bottom: 1px solid #444;
+}
+
+
+body.dark-theme .faq-item {
+  border: 1px solid #444 !important;
+}
+
+
+/* Slider */
+
+body.dark-theme .slider-container {
+  background-color: #1e1e1e !important;
+
+  color: #ffffff !important;
+
+  border: 1px solid #333;
+}
+
+
+/* Links */
+
+body.dark-theme a {
+  color: #6ea8fe !important;
+}
+
+
+/* Modal */
+
+body.dark-theme .modal-box {
+  background-color: #212529 !important;
+
+  color: #ffffff !important;
+}
+
+
+/* ==========================================
+   FOOTER
+   ========================================== */
+
+footer {
+  text-align: center;
+
+  background-color: #ffffff;
+
+  color: #555;
+
+  padding: 20px;
+
+  margin-top: 30px;
+
+  border-top: 1px solid #ddd;
+}
+
+
+/* ==========================================
+   RESPONSIVE DESIGN
+   ========================================== */
+
+@media (max-width: 768px) {
+
+  header {
+    gap: 10px;
+  }
+
+  header .btn {
+    font-size: 0.85rem;
+  }
+
+  .nav-container {
+    padding: 10px 15px;
+  }
+
+  .nav-links a {
+    padding: 10px;
+  }
+
+  .slider-container {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .slide-item {
+    padding: 30px 25px;
+  }
+
+}
+
+
+/* ==========================================
+   VERY SMALL SCREENS
+   ========================================== */
+
+@media (max-width: 480px) {
+
+  .notification-banner {
+    font-size: 0.85rem;
+  }
+
+  header {
+    padding: 12px;
+  }
+
+  header h1 {
+    font-size: 1.25rem;
+  }
+
+  .hamburger-toggle {
+    width: 100%;
+    text-align: left;
+  }
+
+  .nav-links {
+    width: 100%;
+  }
+
+  .slide-item {
+    padding: 25px 20px;
+  }
+
+}
+

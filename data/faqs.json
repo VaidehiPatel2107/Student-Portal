@@ -1,0 +1,17 @@
+[
+  {"id": 1, "category": "Academic", "question": "What is the minimum attendance required?", "answer": "A minimum of 75% attendance is required in all subjects to get term grant eligibility."},
+  {"id": 2, "category": "Fees", "question": "How can I pay semester fees?", "answer": "You can pay fees online through the StudentHub Fees tab using net banking, UPI, or cards."},
+  {"id": 3, "category": "Examination", "question": "When are mid-term exam schedules posted?", "answer": "Mid-term schedules are released at least two weeks before the exam date on the portal."},
+  {"id": 4, "category": "Academic", "question": "How do I apply for elective subjects?", "answer": "Elective selection opens at the start of each semester inside the Dashboard menu."},
+  {"id": 5, "category": "Hostel", "question": "What are hostel gate timings?", "answer": "Hostel gates close strictly at 9:00 PM for all residential students."},
+  {"id": 6, "category": "Library", "question": "How many books can a student issue?", "answer": "Undergraduate students can issue up to 3 books simultaneously for 14 days."},
+  {"id": 7, "category": "Fees", "question": "Is there a fine for late fee payment?", "answer": "Yes, a late fee of Rs. 100 per day is applied after the designated due date."},
+  {"id": 8, "category": "Academic", "question": "Where can I check internal marks?", "answer": "Internal evaluation marks are published under the University Result section."},
+  {"id": 9, "category": "Examination", "question": "What if I miss an exam due to illness?", "answer": "Submit medical documentation to the HoD office within 3 days to apply for re-test."},
+  {"id": 10, "category": "Library", "question": "How to access IEEE e-journals remotely?", "answer": "Log in via your college email credentials on the library digital gateway."},
+  {"id": 11, "category": "Academic", "question": "How can I get a bonafide certificate?", "answer": "Submit a bonafide request on the StudentHub Communication tab."},
+  {"id": 12, "category": "Hostel", "question": "Are mess charges included in hostel fees?", "answer": "Yes, standard mess charges are bundled with annual hostel fees."},
+  {"id": 13, "category": "Fees", "question": "Can fee receipts be downloaded?", "answer": "Yes, PDF receipts are available immediately in transaction history."},
+  {"id": 14, "category": "Examination", "question": "Where are remedial exam forms available?", "answer": "Remedial forms appear on the dashboard after university result declarations."},
+  {"id": 15, "category": "Library", "question": "Can reference books be issued outside?", "answer": "Reference materials are strictly for reading room reference only."}
+]
